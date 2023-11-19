@@ -1,0 +1,263 @@
+/* CSS Reset  */
+
+
+*{
+    margin: -4px 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar  */
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+}
+
+
+/* Logo and Image  */
+
+
+#logo{
+    margin: 18px 31px;
+
+}
+
+#logo img{
+    height: 40px;
+    margin: 5px 3px;
+    filter: invert(100%);
+
+}
+
+
+/* List Styling  */
+
+
+/* #navbar{
+    position: absolute;
+} */
+#navbar ul{
+    display: flex;
+    font-family: 'Anton', sans-serif;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section  */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 645px;
+}
+#home::before{
+    content: "";
+    background: url('../img/fbg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* Services  */
+
+
+.services{
+    text-align: center;
+    margin-top: 15px;
+}
+#services{
+    margin: 35px ;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(250, 39, 39);
+    margin: 2px 2px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #f3eaec;
+}
+#services .box img{
+    border: 2px solid rgb(90, 0, 0);
+    height: 200px;
+}
+
+
+/* Clients Section  */
+
+
+#clients{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+#cs1{
+    height: 300px;
+    /* position: absolute; */
+}
+#clients img{
+    height: 150px;
+}
+.cs{
+    padding: 0px;
+    margin: -5px;
+}
+#cs1::before{
+    content: "";
+    position: absolute;
+    background: url('../img/fb3.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 42%;
+    z-index: -1;
+    opacity: 1;
+}
+#cs1 h1{
+    color: #c3ecf3;
+}
+
+/* Contact Section  */
+
+#contact{
+    position: relative;
+    margin: -33px 0px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('../img/contact4.jpg') no-repeat center center/cover;
+
+}
+#cb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+    
+}
+#cb form{
+    width: 40%;
+}
+#cb label{
+    font-size: 1.3rem;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Titillium Web', sans-serif;
+
+
+}
+
+#cb input, #cb textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+    
+}
+
+
+
+
+/* Footer  */
+
+.c{
+    text-align: center;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes  */
+
+
+.hp{
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:#9c0000;
+    color: cornsilk;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+
+}
+/* .btn:hover{
+    background-color: cornsilk;
+    color:#9c0000 ;
+} */
+.hsc{
+    font-size: 1.rem;
+    padding: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.box p{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
